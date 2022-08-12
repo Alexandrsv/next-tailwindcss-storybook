@@ -4,6 +4,9 @@ const NodePolyfillPlugin = require('node-polyfill-webpack-plugin');
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  images: {
+    domains: ['i.pravatar.cc'],
+  },
   webpack: (config) => {
     return {
       ...config,
